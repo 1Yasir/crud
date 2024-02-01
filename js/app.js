@@ -45,8 +45,8 @@ function displayData(userInfoDetails) {
         <td>${user.email}</td>
         <td>${user.uniqueID}</td>
         <td>
-        <button onclick="edit(${i})">Edit</button>
-        <button onclick="del(${user.uniqueID})">Delete</button>
+        <button onclick="edit(${i})" class = "edit">Edit</button>
+        <button onclick="del(${user.uniqueID})" class = "delete">Delete</button>
         </td>
         </tr>
         `;

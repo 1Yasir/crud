@@ -117,5 +117,19 @@ tr{
 }
 
 button{
+    all: unset;
     cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+.edit{
+    background-color: green;
+}
+tr td button:hover{
+    opacity: .8;
 }
