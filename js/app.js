@@ -4,6 +4,9 @@ const tableBody = document.getElementById("tbody");
 const searchInput = document.getElementById("search");
 let isEditUser = false;
 let editUserIndex = null;
+const submitBtn  =document.getElementById("submit");
+let submitBtnValue = submitBtn.value;
+
 
 // getInformation user and push the array
 function getData(e) {
@@ -21,6 +24,7 @@ function getData(e) {
             email,
             uniqueID: uniqueId(),
         };
+        submitBtn.value = submitBtnValue;
     } else {
         userInfoDetails.push({
             userName,
@@ -81,6 +85,7 @@ function edit(index) {
     document.getElementById("userName").value = editUser.userName;
     document.getElementById("password").value = editUser.password;
     document.getElementById("email").value = editUser.email;
+    submitBtn.value = "Save"
 }
 
 // generate a unique ID
