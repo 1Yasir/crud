@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserInfo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+    <div class="center">
+        <h1>CRUD</h1>
+        <h2>Using HTML|CSS|JS</h2>
+
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="userInfo">
+                <div class="collect-userData">
+                    <form onsubmit="getData(event)">
+                        <div class="form-control">
+                            <input type="text" placeholder="Username" required id="userName">
+                        </div>
+                        <div class="form-control">
+                            <input type="password" placeholder="password" required id="password">
+                        </div>
+                      
+                        <div class="form-control">
+                            <input type="email" placeholder="Email" required id="email">
+                        </div>
+                        <div class="form-control">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="search-user">
+                    <input type="text" placeholder="Search" id="search">
+                </div>
+                <div class="display-user-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Password</th>
+                                <th>Email</th>
+                                <th>Unique ID</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <!-- show dynamic data using form -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
