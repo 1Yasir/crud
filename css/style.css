@@ -115,3 +115,7 @@ tr{
 .opacity{
     transform: scale(0);
 }
+
+button{
+    cursor: pointer;
+}
